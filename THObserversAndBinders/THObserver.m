@@ -18,7 +18,6 @@
     __weak id _observedObject;
     NSString *_keyPath;
     dispatch_block_t _block;
-    BOOL _observingStopped;
 }
 
 - (id)initForObject:(id)object

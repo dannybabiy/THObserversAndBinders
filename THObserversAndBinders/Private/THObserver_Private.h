@@ -23,4 +23,6 @@ typedef enum THObserverBlockArgumentsKind {
  blockArgumentsKind:(THObserverBlockArgumentsKind)blockArgumentsKind
              target:(id)target; // used for unregistering
 
+@property (nonatomic) BOOL observingStopped;
+
 @end

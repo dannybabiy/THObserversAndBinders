@@ -1,5 +1,7 @@
 # THObserversAndBinders
 
+A fork by Yan Rabovik ([@rabovik][twitter] on twitter)
+
 © 2012 James Montgomerie  
 jamie@montgomerie.net, [http://www.blog.montgomerie.net/](http://www.blog.montgomerie.net/)  
 jamie@th.ingsmadeoutofotherthin.gs, [http://th.ingsmadeoutofotherthin.gs/](http://th.ingsmadeoutofotherthin.gs/)  
@@ -244,3 +246,5 @@ _observerIvar = [THObserver observerForObject:self.objectProperty keyPath:@"prop
 And remember to ensure that the observer is not observing by the time that the object in _objectIvar is released (e.g. by calling `[_observerIvar stopObserving]` in your dealloc).
 
 (Thanks to Peter Steinberger for pointing out that this could use elucidation.)
+
+[twitter]: https://twitter.com/rabovik

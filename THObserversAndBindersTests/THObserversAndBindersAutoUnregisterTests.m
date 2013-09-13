@@ -11,6 +11,15 @@
 #import "THBinder.h"
 #import "THObserversAndBindersAutoUnregisterTests.h"
 
+/*
+ We run `p RSDHTestsIncrementKVOLeakCounter()` on `NSKVODeallocateBreak` exception
+ to make automatic tests of successfull KVO unregistering.
+ */
+static NSUInteger KVOLeakCounter = 0;
+void RSDHTestsIncrementKVOLeakCounter(){
+    ++KVOLeakCounter;
+}
+
 @interface THBinder (){
     @public
     THObserver *_observer;
@@ -26,6 +35,21 @@
 @implementation THObserversAndBindersAutoUnregisterTests{
 }
 
+#pragma mark - KVO leak check
+-(void)makeKVOLeak{
+    id __attribute__((objc_precise_lifetime)) observer = [NSObject new];
+    @autoreleasepool {
+        id x = [NSObject new];
+        [x addObserver:observer forKeyPath:@"test" options:0 context:NULL];
+    }
+}
+
+-(void)testKVOLeak{
+    KVOLeakCounter = 0;
+    [self makeKVOLeak];
+    STAssertTrue(1 == KVOLeakCounter, @"Tests must be run with NSKVODeallocateBreak breakpoint.");
+}
+
 #pragma mark - Observers
 
 -(void)testStopObservingEnablesObservingStoppedProperty
@@ -39,6 +63,7 @@
 
 -(void)testStopObservingCalledOnObservedObjectDies
 {
+    KVOLeakCounter = 0;
     THObserver *observer = nil;
     @autoreleasepool {
         id object = [[NSObject alloc] init];
@@ -46,11 +71,13 @@
         NSLog(@"↓↓↓↓↓↓↓↓↓ There sould be no `KVO leak` statement below ↓↓↓↓↓↓↓↓↓");
     }
     NSLog(@"↑↑↑↑↑↑↑↑↑ There sould be no `KVO leak` statement above ↑↑↑↑↑↑↑↑↑");
+    STAssertTrue(0 == KVOLeakCounter, @"There was a KVO leak.");
     STAssertTrue(observer.observingStopped, @"StopObserving was not called");
 }
 
 - (void)testPlainChangeReleasingObservedDictionary
 {
+    KVOLeakCounter = 0;
     THObserver *observer = nil;
     __weak id weakObject;
     @autoreleasepool {
@@ -62,12 +89,14 @@
         NSLog(@"↓↓↓↓↓↓↓↓↓ There sould be no `KVO leak` statement below ↓↓↓↓↓↓↓↓↓");
     }
     NSLog(@"↑↑↑↑↑↑↑↑↑ There sould be no `KVO leak` statement above ↑↑↑↑↑↑↑↑↑");
+    STAssertTrue(0 == KVOLeakCounter, @"There was a KVO leak.");
     STAssertNil(weakObject, @"Dictionary was not deallocated!");
     STAssertTrue(observer.observingStopped, @"StopObserving was not called");
 }
 
 - (void)testPlainChangeReleasingObservedNSObjectSubclass
 {
+    KVOLeakCounter = 0;
     THObserver *observer = nil;
     @autoreleasepool {
         id object = [[NSObjectSubclass alloc] init];
@@ -75,6 +104,7 @@
         NSLog(@"↓↓↓↓↓↓↓↓↓ There sould be no `KVO leak` statement below ↓↓↓↓↓↓↓↓↓");
     }
     NSLog(@"↑↑↑↑↑↑↑↑↑ There sould be no `KVO leak` statement above ↑↑↑↑↑↑↑↑↑");
+    STAssertTrue(0 == KVOLeakCounter, @"There was a KVO leak.");
     STAssertTrue(observer.observingStopped, @"StopObserving was not called");
 }
 
@@ -94,6 +124,7 @@
 
 -(void)testSameTargetAndObservedObject
 {
+    KVOLeakCounter = 0;
     THObserver *observer;
     @autoreleasepool {
         id object = [NSObject new];
@@ -104,6 +135,7 @@
         NSLog(@"↓↓↓↓↓↓↓↓↓ There sould be no `KVO leak` statement below ↓↓↓↓↓↓↓↓↓");
     }
     NSLog(@"↑↑↑↑↑↑↑↑↑ There sould be no `KVO leak` statement above ↑↑↑↑↑↑↑↑↑");
+    STAssertTrue(0 == KVOLeakCounter, @"There was a KVO leak.");
     STAssertTrue(observer.observingStopped, @"StopObserving was not called");
 }
 
@@ -123,6 +155,7 @@
 
 -(void)testStopObservingCalledOnBindFromObjectDies
 {
+    KVOLeakCounter = 0;
     THBinder *binder;
     THObserver *observer;
     NSObject *testTo = [NSObject new];
@@ -136,6 +169,7 @@
         NSLog(@"↓↓↓↓↓↓↓↓↓ There sould be no `KVO leak` statement below ↓↓↓↓↓↓↓↓↓");
     }
     NSLog(@"↑↑↑↑↑↑↑↑↑ There sould be no `KVO leak` statement above ↑↑↑↑↑↑↑↑↑");
+    STAssertTrue(0 == KVOLeakCounter, @"There was a KVO leak.");
     STAssertTrue(observer.observingStopped, @"StopObserving was not called");
 }
 
@@ -157,6 +191,7 @@
 
 -(void)testSameBindToAndBindFromObjects
 {
+    KVOLeakCounter = 0;
     THBinder *binder;
     THObserver *observer;
     @autoreleasepool {
@@ -169,6 +204,7 @@
         NSLog(@"↓↓↓↓↓↓↓↓↓ There sould be no `KVO leak` statement below ↓↓↓↓↓↓↓↓↓");
     }
     NSLog(@"↑↑↑↑↑↑↑↑↑ There sould be no `KVO leak` statement above ↑↑↑↑↑↑↑↑↑");
+    STAssertTrue(0 == KVOLeakCounter, @"There was a KVO leak.");
     STAssertTrue(observer.observingStopped, @"StopObserving was not called");
 }
 

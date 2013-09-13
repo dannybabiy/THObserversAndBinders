@@ -8,7 +8,7 @@
 
 #import "THObserversAndBindersTests.h"
 
-#import <THObserversAndBinders/THObserversAndBinders.h>
+#import "THObserversAndBinders.h"
 
 @interface AddOneTransformer: NSValueTransformer
 

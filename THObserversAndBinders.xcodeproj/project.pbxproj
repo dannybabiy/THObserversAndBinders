@@ -7,38 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A61F87817E3668400E0CA71 /* __THObserversStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF1833179AEEEE00ABD685 /* __THObserversStorage.m */; };
+		1A61F87917E3668C00E0CA71 /* THBinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7830471667E24D00F83BC7 /* THBinder.m */; };
+		1A61F87A17E3668E00E0CA71 /* THObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7830421667AA6800F83BC7 /* THObserver.m */; };
 		1AAF1824179AAAC500ABD685 /* THObserversAndBindersAutoUnregisterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF1823179AAAC500ABD685 /* THObserversAndBindersAutoUnregisterTests.m */; };
 		1AAF1831179AD5CF00ABD685 /* THObserversAndBindersAutoLifetimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF1830179AD5CF00ABD685 /* THObserversAndBindersAutoLifetimeTests.m */; };
-		1AAF1834179AEEEE00ABD685 /* __THObserversStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AAF1832179AEEEE00ABD685 /* __THObserversStorage.h */; };
-		1AAF1835179AEEEE00ABD685 /* __THObserversStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF1833179AEEEE00ABD685 /* __THObserversStorage.m */; };
-		1ACF0F3517DB3F190061AC98 /* NSObject+RSDeallocHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ACF0F3317DB3F190061AC98 /* NSObject+RSDeallocHandler.h */; };
-		1ACF0F3617DB3F190061AC98 /* NSObject+RSDeallocHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ACF0F3417DB3F190061AC98 /* NSObject+RSDeallocHandler.m */; };
-		1ACF0F3A17DB3F290061AC98 /* RSSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ACF0F3817DB3F290061AC98 /* RSSwizzle.h */; };
-		1ACF0F3B17DB3F290061AC98 /* RSSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ACF0F3917DB3F290061AC98 /* RSSwizzle.m */; };
 		1ACF0F3C17DB41C30061AC98 /* RSSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ACF0F3917DB3F290061AC98 /* RSSwizzle.m */; };
 		1ACF0F3D17DB41C90061AC98 /* NSObject+RSDeallocHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ACF0F3417DB3F190061AC98 /* NSObject+RSDeallocHandler.m */; };
-		7D7830191667A93600F83BC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D7830181667A93600F83BC7 /* Foundation.framework */; };
+		1AE4758717E389F1005DC0CE /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D7830271667A93600F83BC7 /* SenTestingKit.framework */; };
+		1AE4758D17E389F1005DC0CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1AE4758B17E389F1005DC0CE /* InfoPlist.strings */; };
+		1AE4759617E38A45005DC0CE /* __THObserversStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF1833179AEEEE00ABD685 /* __THObserversStorage.m */; };
+		1AE4759717E38A48005DC0CE /* THBinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7830471667E24D00F83BC7 /* THBinder.m */; };
+		1AE4759817E38A4B005DC0CE /* THObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7830421667AA6800F83BC7 /* THObserver.m */; };
+		1AE4759917E38A4E005DC0CE /* THObserversAndBindersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7830361667A93600F83BC7 /* THObserversAndBindersTests.m */; };
+		1AE4759A17E38A50005DC0CE /* THObserversAndBindersAutoUnregisterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF1823179AAAC500ABD685 /* THObserversAndBindersAutoUnregisterTests.m */; };
+		1AE4759B17E38A53005DC0CE /* THObserversAndBindersAutoLifetimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF1830179AD5CF00ABD685 /* THObserversAndBindersAutoLifetimeTests.m */; };
+		1AE4759C17E38A56005DC0CE /* RSSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ACF0F3917DB3F290061AC98 /* RSSwizzle.m */; };
+		1AE4759D17E38A58005DC0CE /* NSObject+RSDeallocHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ACF0F3417DB3F190061AC98 /* NSObject+RSDeallocHandler.m */; };
 		7D7830281667A93600F83BC7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D7830271667A93600F83BC7 /* SenTestingKit.framework */; };
 		7D78302A1667A93600F83BC7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D7830291667A93600F83BC7 /* UIKit.framework */; };
 		7D78302B1667A93600F83BC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D7830181667A93600F83BC7 /* Foundation.framework */; };
-		7D78302E1667A93600F83BC7 /* libTHObserversAndBinders.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D7830151667A93600F83BC7 /* libTHObserversAndBinders.a */; };
 		7D7830341667A93600F83BC7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7D7830321667A93600F83BC7 /* InfoPlist.strings */; };
 		7D7830371667A93600F83BC7 /* THObserversAndBindersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7830361667A93600F83BC7 /* THObserversAndBindersTests.m */; };
-		7D7830431667AA6800F83BC7 /* THObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D7830411667AA6800F83BC7 /* THObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7D7830441667AA6800F83BC7 /* THObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7830421667AA6800F83BC7 /* THObserver.m */; };
-		7D7830451667B3F500F83BC7 /* THObserversAndBinders.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D78301D1667A93600F83BC7 /* THObserversAndBinders.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7D7830481667E24E00F83BC7 /* THBinder.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D7830461667E24D00F83BC7 /* THBinder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7D7830491667E24E00F83BC7 /* THBinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7830471667E24D00F83BC7 /* THBinder.m */; };
 		7D7830531667ED1000F83BC7 /* ReadMe.md in Resources */ = {isa = PBXBuildFile; fileRef = 7D7830521667ED1000F83BC7 /* ReadMe.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7D78302C1667A93600F83BC7 /* PBXContainerItemProxy */ = {
+		1AE4759117E389F1005DC0CE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7D78300C1667A93600F83BC7 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7D7830141667A93600F83BC7;
-			remoteInfo = THObserversAndBinders;
+			remoteGlobalIDString = 7D7830251667A93600F83BC7;
+			remoteInfo = THObserversAndBindersTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -54,7 +54,10 @@
 		1ACF0F3417DB3F190061AC98 /* NSObject+RSDeallocHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RSDeallocHandler.m"; sourceTree = "<group>"; };
 		1ACF0F3817DB3F290061AC98 /* RSSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSwizzle.h; sourceTree = "<group>"; };
 		1ACF0F3917DB3F290061AC98 /* RSSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSwizzle.m; sourceTree = "<group>"; };
-		7D7830151667A93600F83BC7 /* libTHObserversAndBinders.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTHObserversAndBinders.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AE4758617E389F1005DC0CE /* THObserversAndBindersTests-OSX.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "THObserversAndBindersTests-OSX.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AE4758A17E389F1005DC0CE /* THObserversAndBindersTests-OSX-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "THObserversAndBindersTests-OSX-Info.plist"; sourceTree = "<group>"; };
+		1AE4758C17E389F1005DC0CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1AE4759017E389F1005DC0CE /* THObserversAndBindersTests-OSX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "THObserversAndBindersTests-OSX-Prefix.pch"; sourceTree = "<group>"; };
 		7D7830181667A93600F83BC7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7D78301C1667A93600F83BC7 /* THObserversAndBinders-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "THObserversAndBinders-Prefix.pch"; sourceTree = "<group>"; };
 		7D78301D1667A93600F83BC7 /* THObserversAndBinders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THObserversAndBinders.h; sourceTree = "<group>"; };
@@ -74,11 +77,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7D7830121667A93600F83BC7 /* Frameworks */ = {
+		1AE4758317E389F1005DC0CE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D7830191667A93600F83BC7 /* Foundation.framework in Frameworks */,
+				1AE4758717E389F1005DC0CE /* SenTestingKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,7 +92,6 @@
 				7D7830281667A93600F83BC7 /* SenTestingKit.framework in Frameworks */,
 				7D78302A1667A93600F83BC7 /* UIKit.framework in Frameworks */,
 				7D78302B1667A93600F83BC7 /* Foundation.framework in Frameworks */,
-				7D78302E1667A93600F83BC7 /* libTHObserversAndBinders.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +137,24 @@
 			path = Support/RSDeallocHandler/Support/RSSwizzle/RSSwizzle;
 			sourceTree = "<group>";
 		};
+		1AE4758817E389F1005DC0CE /* THObserversAndBindersTests-OSX */ = {
+			isa = PBXGroup;
+			children = (
+				1AE4758917E389F1005DC0CE /* Supporting Files */,
+			);
+			path = "THObserversAndBindersTests-OSX";
+			sourceTree = "<group>";
+		};
+		1AE4758917E389F1005DC0CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1AE4758A17E389F1005DC0CE /* THObserversAndBindersTests-OSX-Info.plist */,
+				1AE4758B17E389F1005DC0CE /* InfoPlist.strings */,
+				1AE4759017E389F1005DC0CE /* THObserversAndBindersTests-OSX-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		7D78300A1667A93600F83BC7 = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +163,7 @@
 				7D78301A1667A93600F83BC7 /* THObserversAndBinders */,
 				7D78302F1667A93600F83BC7 /* THObserversAndBindersTests */,
 				1AAF1825179AAE3900ABD685 /* Support */,
+				1AE4758817E389F1005DC0CE /* THObserversAndBindersTests-OSX */,
 				7D7830171667A93600F83BC7 /* Frameworks */,
 				7D7830161667A93600F83BC7 /* Products */,
 			);
@@ -151,8 +172,8 @@
 		7D7830161667A93600F83BC7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7D7830151667A93600F83BC7 /* libTHObserversAndBinders.a */,
 				7D7830261667A93600F83BC7 /* THObserversAndBindersTests.octest */,
+				1AE4758617E389F1005DC0CE /* THObserversAndBindersTests-OSX.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -214,39 +235,24 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		7D7830401667A94400F83BC7 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7D7830431667AA6800F83BC7 /* THObserver.h in Headers */,
-				7D7830451667B3F500F83BC7 /* THObserversAndBinders.h in Headers */,
-				1ACF0F3A17DB3F290061AC98 /* RSSwizzle.h in Headers */,
-				7D7830481667E24E00F83BC7 /* THBinder.h in Headers */,
-				1AAF1834179AEEEE00ABD685 /* __THObserversStorage.h in Headers */,
-				1ACF0F3517DB3F190061AC98 /* NSObject+RSDeallocHandler.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		7D7830141667A93600F83BC7 /* THObserversAndBinders */ = {
+		1AE4758517E389F1005DC0CE /* THObserversAndBindersTests-OSX */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7D78303A1667A93600F83BC7 /* Build configuration list for PBXNativeTarget "THObserversAndBinders" */;
+			buildConfigurationList = 1AE4759517E389F1005DC0CE /* Build configuration list for PBXNativeTarget "THObserversAndBindersTests-OSX" */;
 			buildPhases = (
-				7D7830111667A93600F83BC7 /* Sources */,
-				7D7830121667A93600F83BC7 /* Frameworks */,
-				7D7830401667A94400F83BC7 /* Headers */,
+				1AE4758217E389F1005DC0CE /* Sources */,
+				1AE4758317E389F1005DC0CE /* Frameworks */,
+				1AE4758417E389F1005DC0CE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1AE4759217E389F1005DC0CE /* PBXTargetDependency */,
 			);
-			name = THObserversAndBinders;
-			productName = THObserversAndBinders;
-			productReference = 7D7830151667A93600F83BC7 /* libTHObserversAndBinders.a */;
-			productType = "com.apple.product-type.library.static";
+			name = "THObserversAndBindersTests-OSX";
+			productName = "THObserversAndBindersTests-OSX";
+			productReference = 1AE4758617E389F1005DC0CE /* THObserversAndBindersTests-OSX.octest */;
+			productType = "com.apple.product-type.bundle";
 		};
 		7D7830251667A93600F83BC7 /* THObserversAndBindersTests */ = {
 			isa = PBXNativeTarget;
@@ -260,7 +266,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				7D78302D1667A93600F83BC7 /* PBXTargetDependency */,
 			);
 			name = THObserversAndBindersTests;
 			productName = THObserversAndBindersTests;
@@ -275,6 +280,11 @@
 			attributes = {
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "James Montgomerie";
+				TargetAttributes = {
+					1AE4758517E389F1005DC0CE = {
+						TestTargetID = 7D7830251667A93600F83BC7;
+					};
+				};
 			};
 			buildConfigurationList = 7D78300F1667A93600F83BC7 /* Build configuration list for PBXProject "THObserversAndBinders" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -288,13 +298,21 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7D7830141667A93600F83BC7 /* THObserversAndBinders */,
 				7D7830251667A93600F83BC7 /* THObserversAndBindersTests */,
+				1AE4758517E389F1005DC0CE /* THObserversAndBindersTests-OSX */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1AE4758417E389F1005DC0CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AE4758D17E389F1005DC0CE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7D7830231667A93600F83BC7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -323,15 +341,18 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7D7830111667A93600F83BC7 /* Sources */ = {
+		1AE4758217E389F1005DC0CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D7830441667AA6800F83BC7 /* THObserver.m in Sources */,
-				7D7830491667E24E00F83BC7 /* THBinder.m in Sources */,
-				1ACF0F3617DB3F190061AC98 /* NSObject+RSDeallocHandler.m in Sources */,
-				1ACF0F3B17DB3F290061AC98 /* RSSwizzle.m in Sources */,
-				1AAF1835179AEEEE00ABD685 /* __THObserversStorage.m in Sources */,
+				1AE4759D17E38A58005DC0CE /* NSObject+RSDeallocHandler.m in Sources */,
+				1AE4759617E38A45005DC0CE /* __THObserversStorage.m in Sources */,
+				1AE4759717E38A48005DC0CE /* THBinder.m in Sources */,
+				1AE4759817E38A4B005DC0CE /* THObserver.m in Sources */,
+				1AE4759C17E38A56005DC0CE /* RSSwizzle.m in Sources */,
+				1AE4759B17E38A53005DC0CE /* THObserversAndBindersAutoLifetimeTests.m in Sources */,
+				1AE4759917E38A4E005DC0CE /* THObserversAndBindersTests.m in Sources */,
+				1AE4759A17E38A50005DC0CE /* THObserversAndBindersAutoUnregisterTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,22 +363,33 @@
 				7D7830371667A93600F83BC7 /* THObserversAndBindersTests.m in Sources */,
 				1AAF1824179AAAC500ABD685 /* THObserversAndBindersAutoUnregisterTests.m in Sources */,
 				1ACF0F3D17DB41C90061AC98 /* NSObject+RSDeallocHandler.m in Sources */,
+				1A61F87A17E3668E00E0CA71 /* THObserver.m in Sources */,
 				1AAF1831179AD5CF00ABD685 /* THObserversAndBindersAutoLifetimeTests.m in Sources */,
 				1ACF0F3C17DB41C30061AC98 /* RSSwizzle.m in Sources */,
+				1A61F87917E3668C00E0CA71 /* THBinder.m in Sources */,
+				1A61F87817E3668400E0CA71 /* __THObserversStorage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7D78302D1667A93600F83BC7 /* PBXTargetDependency */ = {
+		1AE4759217E389F1005DC0CE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7D7830141667A93600F83BC7 /* THObserversAndBinders */;
-			targetProxy = 7D78302C1667A93600F83BC7 /* PBXContainerItemProxy */;
+			target = 7D7830251667A93600F83BC7 /* THObserversAndBindersTests */;
+			targetProxy = 1AE4759117E389F1005DC0CE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		1AE4758B17E389F1005DC0CE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AE4758C17E389F1005DC0CE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		7D7830321667A93600F83BC7 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -369,6 +401,73 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1AE4759317E389F1005DC0CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "THObserversAndBindersTests-OSX/THObserversAndBindersTests-OSX-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "THObserversAndBindersTests-OSX/THObserversAndBindersTests-OSX-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				VALID_ARCHS = x86_64;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		1AE4759417E389F1005DC0CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "THObserversAndBindersTests-OSX/THObserversAndBindersTests-OSX-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "THObserversAndBindersTests-OSX/THObserversAndBindersTests-OSX-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				VALID_ARCHS = x86_64;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		7D7830381667A93600F83BC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -417,44 +516,6 @@
 			};
 			name = Release;
 		};
-		7D78303B1667A93600F83BC7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = (
-					armv7,
-					x86_64,
-					armv7s,
-				);
-				DSTROOT = /tmp/THObserversAndBinders.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "THObserversAndBinders/THObserversAndBinders-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macos";
-			};
-			name = Debug;
-		};
-		7D78303C1667A93600F83BC7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = (
-					armv7,
-					x86_64,
-					armv7s,
-				);
-				DSTROOT = /tmp/THObserversAndBinders.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "THObserversAndBinders/THObserversAndBinders-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macos";
-			};
-			name = Release;
-		};
 		7D78303E1667A93600F83BC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -469,6 +530,7 @@
 					"\"$(TARGET_BUILD_DIR)/usr/local/lib/include\"",
 				);
 				INFOPLIST_FILE = "THObserversAndBindersTests/THObserversAndBindersTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -488,6 +550,7 @@
 					"\"$(TARGET_BUILD_DIR)/usr/local/lib/include\"",
 				);
 				INFOPLIST_FILE = "THObserversAndBindersTests/THObserversAndBindersTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -496,20 +559,19 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1AE4759517E389F1005DC0CE /* Build configuration list for PBXNativeTarget "THObserversAndBindersTests-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AE4759317E389F1005DC0CE /* Debug */,
+				1AE4759417E389F1005DC0CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		7D78300F1667A93600F83BC7 /* Build configuration list for PBXProject "THObserversAndBinders" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7D7830381667A93600F83BC7 /* Debug */,
 				7D7830391667A93600F83BC7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7D78303A1667A93600F83BC7 /* Build configuration list for PBXNativeTarget "THObserversAndBinders" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7D78303B1667A93600F83BC7 /* Debug */,
-				7D78303C1667A93600F83BC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -87,7 +87,7 @@
         observer = [THObserver observerForObject:observedObject
                                          keyPath:@"testKey"
                                           target:target
-                                          action:@selector(testSelector)];
+                                          action:@selector(testStopObservingCalledOnTargetDies)];
     }
     STAssertTrue(observer.observingStopped, @"StopObserving was not called");
 }
@@ -100,7 +100,7 @@
         observer = [THObserver observerForObject:object
                                          keyPath:@"testKey"
                                           target:object
-                                          action:@selector(testSelector)];
+                                          action:@selector(testSameTargetAndObservedObject)];
         NSLog(@"↓↓↓↓↓↓↓↓↓ There sould be no `KVO leak` statement below ↓↓↓↓↓↓↓↓↓");
     }
     NSLog(@"↑↑↑↑↑↑↑↑↑ There sould be no `KVO leak` statement above ↑↑↑↑↑↑↑↑↑");

@@ -8,6 +8,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/th-in-gs/THObserversAndBinders.git", :tag => "1.0.0" }
   s.source_files = 'THObserversAndBinders/**/*.{h,m}'
   s.requires_arc = true
+  s.dependency 'RSDeallocHandler'
   
   s.ios.deployment_target = '5.0'
   s.osx.deployment_target = '10.7'
